@@ -1,0 +1,87 @@
+:root {
+    --grey: #E0DEDE;
+    --black: #2A2A2A;
+    --brown: #471717;
+    --lightgray: #D9D9D9;
+    --gray: #9C9C9C;
+    --orange: #F48915;
+    --darkGrey: #464D53;
+    --caloryCard: #656565;
+    --planCard: linear-gradient(210.41deg, #FA5042 1.14%, #FFA739 100.75%);
+    --appColor: #3C3F45;
+}
+
+
+input {
+    display: block;
+    font-size: 16px;
+    width: 80%;
+    margin: 15px;
+}
+
+.btn {
+    background-color: var(--orange);
+    color: #fff;
+    cursor: pointer;
+    width: 80%;
+    height: 50px;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 24px;
+}
+
+.btn:hover {
+    scale: 1.05;
+}
+
+
+.bmi {
+    background-color: var(--black);
+    color: var(--orange);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    align-items: center;
+    background-color: var(--appColor);
+
+}
+
+.height-cm {
+    height: 60px;
+    border: none;
+    font-size: 30px;
+    text-align: center;
+}
+
+.third-card h1 {
+    color: var(--orange);
+}
+
+.third-card h2 {
+    color: var(--orange);
+}
+
+
+@media(max-width:768px) {
+
+
+    .calculator {
+        width: 76vw;
+    }
+
+    .bmi {
+        width: 76vw;
+    }
+
+}

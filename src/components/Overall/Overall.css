@@ -1,0 +1,319 @@
+h3 {
+    color: white;
+}
+
+:root {
+    --grey: #E0DEDE;
+    --black: #2A2A2A;
+    --brown: #471717;
+    --lightgray: #D9D9D9;
+    --gray: #9C9C9C;
+    --orange: #F48915;
+    --darkGrey: #464D53;
+    --caloryCard: #656565;
+    --planCard: linear-gradient(210.41deg, #FA5042 1.14%, #FFA739 100.75%);
+    --appColor: #3C3F45;
+}
+
+body {
+    background-color: var(--darkGrey);
+}
+
+
+.column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.left-row {
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.left-row .health {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 70px;
+    background-color: var(--black);
+    color: var(--orange);
+}
+
+.left-row progress {
+    padding-left: 20px;
+}
+
+.left-row .this-week {
+    background-color: var(--appColor);
+    padding: 30px;
+}
+
+.left-row .overall-info {
+    color: var(--orange);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.left-row .info-activity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.left-row .information {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    background-color: var(--appColor);
+}
+
+.left-row p {
+    color: var(--lightgray);
+    margin-top: 5px;
+}
+
+.square {
+    height: 60px;
+    width: 2px;
+    background-color: var(--orange);
+
+}
+
+.left-row .information .overall-info {
+    margin-bottom: 20px;
+}
+
+.left-row .rate {
+    background-color: var(--appColor);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-top: 46px;
+}
+
+.left-row .rate .avg {
+    padding: 15px 0px;
+    margin-bottom: 20px;
+}
+
+.left-row .rate .avg h1 {
+    color: var(--orange);
+}
+
+.right-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color: var(--grey); */
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: var(--grey);
+}
+
+.header h1 {
+    width: 300px;
+    padding-bottom: 15px;
+}
+
+.right-row h1 {
+    color: var(--black);
+}
+
+.chart {
+    width: 300px;
+    height: 189px;
+    position: relative;
+    background-color: var(--grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.outer {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    padding: 20px;
+}
+
+.inner {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#number {
+    font-weight: 700;
+    font-size: 24px;
+    background-color: var(--grey);
+    position: relative;
+}
+
+circle {
+    display: flex;
+    justify-content: center;
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 15px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+
+.donut-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 30px;
+}
+
+.donut-chart h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--orange);
+    background-color: var(--black);
+    width: 100%;
+    margin-top: -20px;
+    height: 70px;
+}
+
+.inside-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--appColor);
+    height: 100%;
+}
+
+.apexcharts-legend {
+    display: none;
+    visibility: hidden;
+}
+
+
+.Activity-list {
+    display: flex;
+}
+
+.graph-all {
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    color: var(--black);
+    margin-top: 30px;
+}
+
+.third-card {
+    display: flex;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: var(--grey);
+}
+
+.third-card .topic {
+    margin-top: 15px;
+}
+
+.third-card .icon-arrow p {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.number-weight-one {
+    font-size: 44px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.icon-arrow .weight-goal {
+    color: var(--black);
+    font-size: 32px;
+}
+
+.number-weight-two {
+    font-size: 44px;
+    margin: 5px 0 40px 0;
+}
+
+
+@keyframes anim {
+    100% {
+        stroke-dashoffset: 165;
+    }
+}
+
+svg {
+    position: absolute;
+    top: 15px;
+    left: 70px;
+}
+
+
+
+@media(max-width:768px) {
+    .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .left-row {
+        width: 80vw;
+    }
+
+    .right-row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        width: 80vw;
+        margin-left: 28px;
+    }
+
+    .first-card {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .header .topic {
+        margin-top: 30px;
+    }
+
+    .graph-button {
+        margin-bottom: 30px;
+    }
+
+    .second-card {
+        display: flex;
+        margin-left: 30px;
+        padding: 30px;
+    }
+
+}

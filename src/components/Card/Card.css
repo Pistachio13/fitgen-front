@@ -1,0 +1,197 @@
+:root {
+    --grey: #E0DEDE;
+    --black: #2A2A2A;
+    --brown: #471717;
+    --lightgray: #D9D9D9;
+    --gray: #9C9C9C;
+    --orange: #F48915;
+    --darkGrey: #464D53;
+    --caloryCard: #656565;
+    --planCard: linear-gradient(210.41deg, #FA5042 1.14%, #FFA739 100.75%);
+    --appColor: #3C3F45;
+}
+
+p {
+    color: white;
+}
+
+.allcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.addPlan-button {
+    display: flex;
+    background-color: var(--orange);
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 30vw;
+    max-width: 30vw;
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+}
+
+.addPlan-button:hover { 
+    cursor: pointer;
+}
+
+.addPlan-button a {
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.mini-card{
+    display: flex;
+    margin: 0px 20px;
+}
+
+.card {
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--appColor);
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+    border: 2px solid var(--orange);
+    
+}
+
+.card h2 {
+    font-size: 40px;
+    margin: 20px 0px 0px 0px;
+    color: white;
+}
+
+.card img {
+    margin: 15px 0px;
+    width: 100px;
+}
+
+.start-end {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.square-horizon {
+    background-color: var(--orange);
+    width: 90vw;
+    height: 0.5vh;
+    margin: 40px 0px;
+}
+
+.square {
+    width: 300px;
+    height: 1px;
+    margin: 10px 10px;
+}
+
+.edit .start {
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+    padding : 15px 30px;
+    margin: 0px 15px;
+    background-color: var(--orange);
+
+    border-radius: 10px;
+    font-weight: bold;
+    max-width: 600px;
+    border: none;
+      
+}
+
+.starttoggle--Done {
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+    padding : 15px 30px;
+    margin: 0 15px;
+    background-color: var(--lightgray);
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    max-width: 600px;
+        max-width: 600px;
+}
+
+
+
+
+.edit .EandD{
+    color: white;
+    text-decoration: none;
+    padding : 20px;
+    font-size: 16px;
+    margin: 0px 15px;
+    font-size: 18px;
+    background-color: none;
+
+}
+
+.start p {
+    font-size: 20px;
+}
+
+.start-exercise {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.end {
+    font-size: 20px;
+    font-weight: 700px;
+}
+
+.end p {
+    font-size: 20px;
+    font-weight: 700px;
+}
+
+.finish-exercise {
+    font-weight: 700;
+}
+
+.description {
+    margin-top: 10px;
+    color: var(--grey);
+    font-size: 18px;
+}
+
+.edit {
+    margin-top: 40px;
+}
+
+
+.edit .EandD {
+    color: var(--grey);
+    font-weight: 500;
+    margin-left: -10px;
+    background-color: transparent;
+    border: none;
+}
+
+.description p  {
+    color: var(--grey);
+    font-weight: 700;
+}
+
+
+@media(max-width:768px) {
+    .mini-card {
+        display: flex;
+        flex-direction: column;
+    }
+}
